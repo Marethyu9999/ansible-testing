@@ -1,0 +1,12 @@
+services:
+  orchestrator:
+    build: 
+      dockerfile: ./orchestrator.Dockerfile
+    # volumes:
+    #   - "./playbook:/ansible"
+  docker-1:
+    build: 
+      dockerfile: ./client.Dockerfile
+  docker-2:
+    build: 
+      dockerfile: ./client.Dockerfile
